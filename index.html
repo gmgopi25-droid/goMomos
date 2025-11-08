@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoMomos - Delicious Momos Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🍜 GoMomos</h1>
+        <p>Delicious Momos Made Fresh Daily</p>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-name="Veg Momos" data-price="120">
+                    <img src="https://source.unsplash.com/featured/?vegetable,dumplings" alt="Veg Momos" class="menu-image">
+                    <h3>Veg Momos</h3>
+                    <p class="price">₹120</p>
+                </div>
+                <div class="menu-item" data-name="Paneer Momos" data-price="150">
+                    <img src="https://source.unsplash.com/featured/?paneer,dumplings" alt="Paneer Momos" class="menu-image">
+                    <h3>Paneer Momos</h3>
+                    <p class="price">₹150</p>
+                </div>
+                <div class="menu-item" data-name="Chicken Momos" data-price="180">
+                    <img src="https://source.unsplash.com/featured/?chicken,dumplings" alt="Chicken Momos" class="menu-image">
+                    <h3>Chicken Momos</h3>
+                    <p class="price">₹180</p>
+                </div>
+                <div class="menu-item" data-name="Kurkure Momos" data-price="200">
+                    <img src="https://source.unsplash.com/featured/?fried,dumplings" alt="Kurkure Momos" class="menu-image">
+                    <h3>Kurkure Momos</h3>
+                    <p class="price">₹200</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart">Your cart is empty. Click on any item to add it!</p>
+            </div>
+            <div class="cart-footer">
+                <div class="total-section">
+                    <strong>Total: ₹<span id="cart-total">0</span></strong>
+                </div>
+                <button id="pay-now-btn" class="pay-button" disabled>Pay Now</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
